@@ -1,0 +1,38 @@
+* {
+    --background-color: rgb(244, 164, 96);
+    --elements-color: rgb(176, 224, 230);
+
+    --elements-border: 2px solid black;
+
+    --font-size: 20px;
+}
+
+#add_pet_body #add_pet {
+    border: var(--elements-border);
+    border-radius: 10px;
+    font-size: var(--font-size);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--elements-color);
+}
+
+#add_pet_body #add_pet #pet_info_header {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#add_pet_body #add_pet form div {
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+#add_pet_body #add_pet form div p {
+    font-weight: bold;
+}
+
+#add_pet_body #add_pet form div:last-child {
+    margin-bottom: 1em;
+    text-align: center;
+}

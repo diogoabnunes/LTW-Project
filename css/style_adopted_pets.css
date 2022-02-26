@@ -1,0 +1,117 @@
+* {
+    --background-color: rgb(244, 164, 96);
+    --elements-color: rgb(176, 224, 230);
+
+    --elements-border: 2px solid black;
+
+    --font-size: 20px;
+}
+
+#adopted_pets_body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+}
+
+#adopted_pets_body aside {
+    border: var(--elements-border);
+    border-radius: 10px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: var(--font-size);
+    margin-top: 1.6em;
+    margin-left: 1em;
+    background-color: var(--elements-color);
+}
+
+#adopted_pets_body aside p {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+#adopted_pets_body aside ul {
+    text-decoration: underline;
+    list-style-type: none;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#adopted_pets_body aside ul li {
+    padding: 5px;
+}
+
+#adopted_pets_body #adopted_pets {
+    margin-top: 2em;
+    padding: 1em;
+    border: var(--elements-border);
+    border-radius: 10px;
+
+    background-color: var(--elements-color);
+}
+
+#adopted_pets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+}
+
+.adopted_pets{
+    text-align: center; 
+    padding: 0.5em 0;
+    margin: 0.5em;
+    border-bottom: 2px solid black;
+
+    background-color:  var(--elements-color);
+}
+
+.adopted_pets #petName{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+.adopted_pets #petImage{
+    margin: 0;
+    max-width: 20em;
+    max-height: 20em;
+}
+
+/* ################################# */
+
+@media screen and (max-width: 850px) {
+    #adopted_pets {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #adopted_pets_body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #adopted_pets_body aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #adopted_pets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #adopted_pets {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: min-content;
+    }
+}

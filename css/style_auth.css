@@ -1,0 +1,66 @@
+* {
+    --background-color: rgb(244, 164, 96);
+    --elements-color: rgb(176, 224, 230);
+
+    --elements-border: 2px solid black;
+
+    --font-size: 20px;
+    --subtitle-size: 30px;
+}
+
+#signin h2, #signup h2 {
+    text-align: center; 
+    padding: 0.5em;
+    font-size: var(--subtitle-size);
+}
+
+#signin, #signup {
+    margin: 1.2em auto;
+    width: 25em;
+    border: var(--elements-border);
+    border-radius: 20px;
+    background-color: var(--elements-color);
+}
+
+#signin label, #signup label {
+    display:block;
+    text-align: center;
+    font-size: var(--font-size);
+}
+
+#signin label input, #signup label input {
+    margin: 0.5em auto;
+    width: 75%;
+    display:block;
+    border: var(--elements-border);
+    padding: 5px 0;
+}
+
+#signup label input[type="file"] {
+    border: none;
+}
+
+#signin input[type="submit"], #signup input[type="submit"] {
+    display:block;
+}
+
+#signup div {
+    display:block;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: var(--font-size);
+    text-align: center;
+}
+
+#signin footer, #signup footer {
+    display: block;
+    font-size: var(--font-size);
+    margin: 10px auto;
+    text-align: center;
+    padding-right: 0.5em;
+}
+
+#signin footer a, #signup footer a {
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,0 +1,85 @@
+* {
+    --background-color: rgb(244, 164, 96);
+    --elements-color: rgb(176, 224, 230);
+
+    --elements-border: 2px solid black;
+
+    --font-size: 20px;
+}
+
+#user_page_body {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#user_page_body #user_info_ {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    margin-top: 1em;
+
+    border: var(--elements-border);
+    border-radius: 10px;
+
+    background-color: var(--elements-color);
+}
+
+#user_page_body #user_info_ div:first-child {
+    padding-top: 1em;
+    text-align: center;
+}
+#user_page_body #user_info_ div{
+    padding-left: 2em;
+    padding-bottom: 1em;
+    font-size: var(--font-size);
+    display: block;
+}
+
+.topics{
+    font-weight: bold;
+}
+
+#user_page_body #user_pets {
+    margin-top: 1em;
+    padding: 1em;
+    border: var(--elements-border);
+    border-radius: 10px;
+
+    background-color: var(--elements-color);
+}
+
+#user_pets div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+}
+
+#user_page_body #user_pets #title{
+    text-align: center; 
+    font-size: var(--font-size);
+    font-weight: bold;
+
+}
+
+.user_pets {
+    text-align: center; 
+    padding: 0.5em 0;
+    margin: 0.5em;
+    border-bottom: 2px solid black;
+
+    background-color:  var(--elements-color);
+}
+
+.user_pets #petName{
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.user_pets #petImage{
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-width: 2px;
+    max-width: 20em;
+    max-height: 20em;
+}
